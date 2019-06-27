@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="canonical" href="https://getbootstrap.com/docs/3.3/examples/starter-template/">
+      <title>Freelance is not free</title>
+      <!-- Bootstrap core CSS -->
+      <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="../static/css/starter-template.css" rel="stylesheet">
+      <link href="../static/css/custom.css" rel="stylesheet">
+      <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+      <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+      <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="../static/css/bootstrap-tagsinput.css">
+      <link rel="stylesheet" href="../static/css/custom.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/themes/github.css">
+      <link rel="stylesheet" href="../../assets/app.css">
+      <style>
+        .bootstrap-tagsinput {
+          background-color: #fff;
+          border: 1px solid #ccc;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          clear: both;
+          display: block;
+          padding: 4px 6px;
+          color: #555;
+          vertical-align: middle;
+          border-radius: 4px;
+          max-width: 100%;
+          line-height: 22px;
+          cursor: text;
+        }
+
+        .btn-default {
+          background-image: none;
+        }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#"></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+               <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+            </div>
+            <!--/.nav-collapse -->
+         </div>
+      </nav>
+      <div class="container" style="max-width:500px;">
+         <div class="starter-template">
+            <h1>Freelance is not free</h1>
+            <p class="lead">  Hourly rate calculator for freelancers
+               <br>
+               Find out the value of your time
+            </p>
+         </div>
+         <form method="POST">
+            <div class="form-group">
+               <label for="CountryInput">Country</label>
+               <select class="form-control selectpicker" id="CountryInput"
+                       name="country"
+                       aria-describedby="Country" placeholder="Select your country" data-live-search="true">
+                           <option value="Albania">Albania</option>
+                           <option value="Algeria">Algeria</option>
+                           <option value="Argentina">Argentina</option>
+                           <option value="Armenia">Armenia</option>
+                           <option value="Australia">Australia</option>
+                           <option value="Austria">Austria</option>
+                           <option value="Bangladesh">Bangladesh</option>
+                           <option value="Belarus">Belarus</option>
+                           <option value="Belgium">Belgium</option>
+                           <option value="Bolivia">Bolivia</option>
+                           <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                           <option value="Brazil">Brazil</option>
+                           <option value="Bulgaria">Bulgaria</option>
+                           <option value="Canada">Canada</option>
+                           <option value="Chile">Chile</option>
+                           <option value="China">China</option>
+                           <option value="Colombia">Colombia</option>
+                           <option value="Costa Rica">Costa Rica</option>
+                           <option value="Croatia">Croatia</option>
+                           <option value="Czech Republic">Czech Republic</option>
+                           <option value="Denmark">Denmark</option>
+                           <option value="Dominican Republic">Dominican Republic</option>
+                           <option value="Ecuador">Ecuador</option>
+                           <option value="Egypt">Egypt</option>
+                           <option value="El Salvador">El Salvador</option>
+                           <option value="Estonia">Estonia</option>
+                           <option value="Finland">Finland</option>
+                           <option value="France">France</option>
+                           <option value="Georgia">Georgia</option>
+                           <option value="Germany">Germany</option>
+                           <option value="Greece">Greece</option>
+                           <option value="Honduras">Honduras</option>
+                           <option value="Hong Kong">Hong Kong</option>
+                           <option value="Hungary">Hungary</option>
+                           <option value="India">India</option>
+                           <option value="Indonesia">Indonesia</option>
+                           <option value="Ireland">Ireland</option>
+                           <option value="Israel">Israel</option>
+                           <option value="Italy">Italy</option>
+                           <option value="Jamaica">Jamaica</option>
+                           <option value="Japan">Japan</option>
+                           <option value="Kazakhstan">Kazakhstan</option>
+                           <option value="Kenya">Kenya</option>
+                           <option value="Latvia">Latvia</option>
+                           <option value="Lithuania">Lithuania</option>
+                           <option value="Macedonia">Macedonia</option>
+                           <option value="Madagascar">Madagascar</option>
+                           <option value="Malaysia">Malaysia</option>
+                           <option value="Mexico">Mexico</option>
+                           <option value="Moldova">Moldova</option>
+                           <option value="Montenegro">Montenegro</option>
+                           <option value="Morocco">Morocco</option>
+                           <option value="Nepal">Nepal</option>
+                           <option value="Netherlands">Netherlands</option>
+                           <option value="New Zealand">New Zealand</option>
+                           <option value="Nicaragua">Nicaragua</option>
+                           <option value="Nigeria">Nigeria</option>
+                           <option value="Norway">Norway</option>
+                           <option value="Pakistan">Pakistan</option>
+                           <option value="Palestinian Territories">Palestinian Territories</option>
+                           <option value="Peru">Peru</option>
+                           <option value="Philippines">Philippines</option>
+                           <option value="Poland">Poland</option>
+                           <option value="Portugal">Portugal</option>
+                           <option value="Romania">Romania</option>
+                           <option value="Russia">Russia</option>
+                           <option value="Saudi Arabia">Saudi Arabia</option>
+                           <option value="Serbia">Serbia</option>
+                           <option value="Singapore">Singapore</option>
+                           <option value="Slovakia">Slovakia</option>
+                           <option value="Slovenia">Slovenia</option>
+                           <option value="South Africa">South Africa</option>
+                           <option value="South Korea">South Korea</option>
+                           <option value="Spain">Spain</option>
+                           <option value="Sri Lanka">Sri Lanka</option>
+                           <option value="Sweden">Sweden</option>
+                           <option value="Switzerland">Switzerland</option>
+                           <option value="Taiwan">Taiwan</option>
+                           <option value="Thailand">Thailand</option>
+                           <option value="Tunisia">Tunisia</option>
+                           <option value="Turkey">Turkey</option>
+                           <option value="Ukraine">Ukraine</option>
+                           <option value="United Arab Emirates">United Arab Emirates</option>
+                           <option value="United Kingdom">United Kingdom</option>
+                           <option value="United States" selected="selected">United States</option>
+                           <option value="Uruguay">Uruguay</option>
+                           <option value="Venezuela">Venezuela</option>
+                           <option value="Vietnam">Vietnam</option>
+
+               </select>
+            </div>
+            <div class="form-group">
+               <label for="exampleInputPassword1">Skills</label>
+               <input type="search" class="form-control" id="SkillsInput"
+                      name="skills" placeholder="Start typing"
+                      data-provide="typeahead">
+               <small id="emailHelp" class="form-text text-muted">Select your most relevant skills</small>
+            </div>
+            <button type="submit" class="btn btn-success">Calculate</button>
+         </form>
+      </div>
+      <!-- /.container -->
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/rainbow.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/language/generic.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/language/html.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/language/javascript.js"></script>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+
+      <script src="assets/app.js"></script>
+      <script src="assets/app_bs3.js"></script>
+      <script>
+        $(document).ready(function() {
+            let source = {{ skills|safe }};
+            // Be sure of adding all the desired tags here
+            //source = ['python', 'data_science'];
+            $('#SkillsInput').tagsinput({
+              typeahead: {
+                  afterSelect: function(val) { this.$element.val(""); },
+                source: source
+              }
+            });
+        });
+      </script>
+   </body>
+</html>
