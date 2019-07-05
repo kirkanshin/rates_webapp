@@ -77,9 +77,11 @@ def get_prediction(skills_selected, country_selected):
     return int(round(prediction))
 
 def get_recommendation(skills_selected):
+    skills_selected = [
+        skill for skill in skills_selected if skill in skill2vec.wv.vocab]
     skills_reccomended = [skills_model_to_human[tup[0]]
                         for tup in skill2vec.most_similar(skills_selected, topn=3)]
-    recommendation = 'Consider learning {}, {} and {} to improve your value.'.format(
+    recommendation = 'Other valuable skills are {}, {} and {}.'.format(
         *skills_reccomended)
     return recommendation
 
